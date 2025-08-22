@@ -65,6 +65,7 @@ margin: auto;
     justify-content: center;
     align-items: center;
     transition: .5S;
+    color: white;
 
 }
 .checkmark>div:nth-child(1)>div:nth-child(3),.checkmark>div:nth-child(1)>div:nth-child(5) {
@@ -109,10 +110,13 @@ margin: auto;
 .checkmark>div:nth-child(1)>div:nth-child(1):hover {
     background-color: #2667ff;
     transform: scale(1.1);
+    color:white
 }
 .checkmark>div:nth-child(1)>div:nth-child(3):hover,.checkmark>div:nth-child(1)>div:nth-child(5):hover {
  background-color: #2667ff;
     transform: scale(1.1);
+    color:white
+
 
 
 }

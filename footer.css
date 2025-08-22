@@ -27,6 +27,7 @@
 .main-footer-box>div:nth-child(1)>div:nth-child(1)>p:nth-child(2) {
 	width: clamp(150px, 100%, 240px);
 	padding-bottom: 20px;
+	color: white;
 }
 
 .main-footer-box>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>ul {
@@ -103,17 +104,27 @@
 	border: none;
 
 }
-
-.main-footer-box>div:nth-child(1)>div:nth-child(4)>div>i {
+.main-footer-box>div:nth-child(1)>div:nth-child(4)>div>div{
+	background-color: #3753FA;
 	position: absolute;
-	bottom: 22px;
-	right: 4px;
-	padding: 5px 8px;
-	font-size: 30px;
-	background-color: blue;
-	color: white;
-	border-radius: 50%;
-	transform: rotate(35deg);
+	bottom: 20px;
+		right: 4px;
+		height: 46px;
+		width: 46px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+}
+.main-footer-box>div:nth-child(1)>div:nth-child(4)>div>div>i {
+	
+	
+
+	
+	font-size: 14px;
+	
+	transform: rotate(35deg) scaley(1.3);
 }
 
 
