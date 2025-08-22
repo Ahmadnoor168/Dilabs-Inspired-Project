@@ -1,0 +1,151 @@
+
+  .menu-toggle {
+    display: block;
+  }
+   .banner-container > div:nth-child(1)  {
+   padding: 15px;
+   display: flex;
+}
+  .banner-container > div:nth-child(1) > p:nth-child(1) {
+  font-size: 50px;
+  font-weight: 600;
+}
+ .banner-container > div:nth-child(1) > div:nth-child(3) {
+  width: 80%;
+  font-size: 15px;
+  flex-direction: column;
+}
+
+ /* .banner-container > div:nth-child(2) */
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: #fff;
+    width: 300px;
+    text-align: Left;
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+  }
+.nav-menu li:hover{
+color: #2c61fe;
+}
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 15px 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: max-height 0.3s ease;
+  }
+
+  .dropdown.open .dropdown-menu {
+    max-height: 300px;
+    padding: 10px 0;
+  }
+
+   
+.SIDEBAR {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  height: 40px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin-left: 30px;
+  position: relative;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 0;
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+  transition: width 0.3s ease;
+  border-radius: 3px;
+}
+
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+
+
+.nav-link.active::before {
+  width: 100%;
+}
+
+.menu-toggle {
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
